@@ -12,6 +12,11 @@ namespace MyMusicPlaylist.Models
         [Key]
         public int SongId { get; set; }
 
+        [ForeignKey(nameof(Category))]
+        public int CategoryId { get; set; }
+
+        public Category SongCategory { get; set; }
+
         [Column(TypeName = "varchar(100)")]
         public string Title { get; set; }
 
@@ -26,6 +31,5 @@ namespace MyMusicPlaylist.Models
         public bool Favourite { get; set; }
         public DateTime DateOfInput { get; set; }
         public DateTime DateOfLastEdit { get; set; }
-        public Category SongCategory { get; set; }
     }
 }
