@@ -8,8 +8,8 @@ using MyMusicPlaylist.Models;
 
 namespace MyMusicPlaylist.Migrations
 {
-    [DbContext(typeof(PlayLisContext))]
-    partial class PlayLisContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(PlaylistContext))]
+    partial class PlaylistContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

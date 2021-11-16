@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MyMusicPlaylist.Models
 {
-    public class PlayLisContext:DbContext
+    public class PlaylistContext:DbContext
     {
-        public PlayLisContext(DbContextOptions<PlayLisContext> options):base(options)
+        public PlaylistContext(DbContextOptions<PlaylistContext> options):base(options)
         {
 
         }

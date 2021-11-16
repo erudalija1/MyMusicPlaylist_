@@ -9,7 +9,7 @@ using MyMusicPlaylist.Models;
 
 namespace MyMusicPlaylist.Migrations
 {
-    [DbContext(typeof(PlayLisContext))]
+    [DbContext(typeof(PlaylistContext))]
     [Migration("20211115224737_InitialCreate")]
     partial class InitialCreate
     {

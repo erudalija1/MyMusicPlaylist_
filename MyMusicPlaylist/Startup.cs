@@ -34,7 +34,7 @@ namespace MyMusicPlaylist
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MyMusicPlaylist", Version = "v1" });
             });
 
-            services.AddDbContext<PlayLisContext>(options =>
+            services.AddDbContext<PlaylistContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
         }
 
